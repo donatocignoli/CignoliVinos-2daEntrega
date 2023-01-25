@@ -1,0 +1,62 @@
+@import url('https://use.typekit.net/wuo2csx.css');
+*{
+	font-family: 'Josefin-Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+        }
+body{
+    width: 100vw;
+    overflow: auto;
+}
+/* cabecera o nav con flexbox */
+header{
+    background-color: #F0ECE6;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    /* ver si es row o column */
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+.areaLogoCabecera{
+    width: 33.3%;
+    height: 18vh;
+    justify-content: flex-start;
+    padding-left: 20%;
+}
+.areaLogoCabecera #logo{
+    display: block;
+    height:100%;
+    object-fit:cover;
+}
+nav{
+    width: 49.9%;
+    flex: row;
+    display: inline-block;
+    align-items: flex-start;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    text-transform: uppercase;
+}
+
+/* Ver inicio del video donde explica cómo hace la cabecera. Puede que haya que incluir un flex-wrap */
+
+/* pasar todo a NAV */
+nav #logoVinizio{
+    height: 90%;
+    object-fit: cover;
+}
+.rrssCabecera{
+    width: 16.6%;
+    display: inline-flex;
+    align-items: flex-start;
+}
+.rrss-cabecera .rrssIco{
+    height: 100%;
+}
