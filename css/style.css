@@ -4,59 +4,115 @@
     padding: 0;
     margin: 0;
     box-sizing: inherit;
-        }
+}
 body{
     width: 100vw;
     overflow: auto;
 }
-/* cabecera o nav con flexbox */
-header{
+/* cabecera con flexbox */
+.cabecera{
     background-color: #F0ECE6;
     height: 20vh;
     display: flex;
     flex-direction: row;
-    /* ver si es row o column */
     align-items: center;
     justify-content: space-around;
     overflow: hidden;
     flex-wrap: wrap;
 }
 .areaLogoCabecera{
-    width: 33.3%;
-    height: 18vh;
+    width: 33.3vw;
+    height: 16vh;
     justify-content: flex-start;
-    padding-left: 20%;
 }
 .areaLogoCabecera #logo{
-    display: block;
+    /* Pasar de la clase al id?? */
     height:100%;
     object-fit:cover;
-}
-nav{
-    width: 49.9%;
+    padding: 0% 5%;
+}nav{
+    width: 49.9vw;
     flex: row;
-    display: inline-block;
     align-items: flex-start;
+    justify-content: space-between;
 }
 nav ul{
+    display: flex;
     list-style: none;
+    padding:4em;
+    display: inline-block;
 }
 nav ul li{
     text-transform: uppercase;
+    display: inline-block;
+    justify-content: space-around;
 }
-
-/* Ver inicio del video donde explica cómo hace la cabecera. Puede que haya que incluir un flex-wrap */
-
-/* pasar todo a NAV */
-nav #logoVinizio{
+nav ul li #logoVinizio{
+    width: 10vw;
     height: 90%;
     object-fit: cover;
 }
 .rrssCabecera{
+    /* ojo, estas propiedades se repiten en esta clase y la de abajo. ver bien por qué */
     width: 16.6%;
-    display: inline-flex;
-    align-items: flex-start;
+    display: inline-block;
+    align-items: center;
+    justify-content: flex-start;
 }
-.rrss-cabecera .rrssIco{
-    height: 100%;
+.rrssCabecera .rrssIco{
+    width: 16.6%;
+    display: inline-block;
+    align-items: center;
+    justify-content: flex-start;
+}
+h1,h2,h3,p{
+    color: #333333;
+}
+/* Propiedades de Main */
+#mainGrid{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: ;
+    grid-template-areas: 
+    "hero"
+    "presentacion"
+    "area1"
+    "area2"
+    "area3"
+    "area4"
+    "area5"
+    "area6"
+}
+/* Propiedades de Secciones */
+.secciones{
+    width: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+.hero {
+    /* grid-template-areas: ???  */
+    width: 100%;
+    height: auto;
+}
+.heroImage{
+    width: 100%;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+.ContieneTexto{
+    margin: 10em 10em;
+    padding: 10em;
+}
+.presentacion{
+    margin:
+}
+footer{
+    display: flex;
+    height: 1fr;
 }
