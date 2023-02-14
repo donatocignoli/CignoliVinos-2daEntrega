@@ -17,13 +17,13 @@ body{
 /* cabecera con flexbox */
 .cabecera{
     background-color: #F0ECE6;
-    height: 20vh;
+    /* height: 20vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     overflow: hidden;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 .areaLogoCabecera{
     width: 33.3vw;
@@ -35,40 +35,65 @@ body{
     height:100%;
     object-fit:cover;
     padding: 0% 5%;
-}nav{
-    width: 49.9vw;
+}
+nav{
     flex: row;
     align-items: flex-start;
     justify-content: space-between;
 }
-nav ul{
+/* nav ul{
     display: flex;
     list-style: none;
     padding:4em;
     display: inline-block;
-}
+} ANULADO POR BS*/
 nav ul li{
     text-transform: uppercase;
     display: inline-block;
     justify-content: space-around;
 }
 nav ul li #logoVinizio{
-    width: 10vw;
+    width: 7vw;
     height: 90%;
     object-fit: cover;
 }
+nav ul li img {
+    width: 3vw;
+    object-fit: cover;
+}
+@media (max-width: 992px) {
+  .navbar{
+    display:inline-flex;
+    flex-wrap: nowrap;
+  }
+  nav ul{
+    padding:2em;
+  }
+  .rrssCabecera{
+    flex-wrap: nowrap;
+  }
+}
+@media (max-width: 768px) {
+  #cabecera{
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+} 
 .rrssCabecera{
     /* ojo, estas propiedades se repiten en esta clase y la de abajo. ver bien por qué */
-    width: 16.6%;
-    display: inline-block;
-    align-items: center;
-    justify-content: flex-start;
+    /* width: 16.6%;
+    display: inline-block; */
+    /* align-items: center;
+    justify-content: flex-start; */
 }
 .rrssCabecera .rrssIco{
-    width: 16.6%;
-    display: inline-block;
+    /* width: 16.6%; */
+    /* display: inline-block;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start; */
 }
 h1,h2,h3,p{
     color: #333333;
