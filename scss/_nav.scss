@@ -1,0 +1,39 @@
+#cabecera{
+    background-color: $backgroundColor2;
+    flex:row;
+    align-items: flex-start;
+    justify-content: space-between;
+    .navbar-brand{
+        #logo{
+            width:;
+            object-fit:cover;
+            padding: 0% 5%;
+            @media(min-width: none;){
+                width:;
+                // cambio de tamaño de logo según el viewport
+            }
+
+        }
+    }
+    .navbar{
+        ul{
+            li{
+                text-transform: uppercase;
+                display: inline-block;
+                justify-content: space-around;
+                #logoVinizio{
+                    width: 7vw;
+                    height: 90%;
+                    object-fit: cover;
+                .rrssIco{
+                    width: 3vw;
+                    object-fit: cover;
+                }
+                }
+            }
+        }
+    }
+    .rrssCabecera{
+
+    }
+}

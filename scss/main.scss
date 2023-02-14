@@ -1,0 +1,28 @@
+@import url('https://use.typekit.net/wuo2csx.css');
+@import "_layout";
+@import "_content";
+@import "_vars";
+@import "_nav";
+@import "_animations"
+// *{
+//     background-color: $backgroundColor1;
+// 	font-family: $mainFont;
+// }
+$primaryColor: red;
+
+body{
+    background-color: $primaryColor;
+    width: 100%;
+    overflow: auto;
+}
+
+
+
+// 1. revisar si compila -- OK
+// 2. empezar a pasar css a los scss
+// 3. no olvidar hacer los mixins, extends
+// 4. no olvidar ALTS, metas, robots.txt
+// 5. arreglar imgs
+// 6. buscar textos
+// 7. arreglar nav
+// 8. github
