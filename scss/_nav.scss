@@ -5,35 +5,51 @@
     justify-content: space-between;
     .navbar-brand{
         #logo{
-            width:;
+            width: 50%;
             object-fit:cover;
             padding: 0% 5%;
-            @media(min-width: none;){
-                width:;
+            @media(min-width: 768px){
+                width:30%;
                 // cambio de tamaño de logo según el viewport
             }
-
+            @media(min-width: 576){
+                width:25%;
         }
     }
-    .navbar{
-        ul{
-            li{
-                text-transform: uppercase;
-                display: inline-block;
-                justify-content: space-around;
-                #logoVinizio{
-                    width: 7vw;
-                    height: 90%;
-                    object-fit: cover;
-                .rrssIco{
-                    width: 3vw;
-                    object-fit: cover;
+}
+#cabecera{
+    ul{
+        li{
+            text-transform: uppercase;
+            display: inline-block;
+            justify-content: space-around;
+            #logoVinizio{
+                width: 7vw;
+                object-fit: cover;
+            .rrssIco{
+                width: 1vw;
+                object-fit: cover;
                 }
                 }
             }
         }
-    }
-    .rrssCabecera{
 
+    .rrssCabecera{
+        @media(min-width: none){
+            width:25%;
+        }
     }
 }
+}
+@media (max-width: 992px) {
+    .navbar{
+      display:inline-flex;
+      flex-wrap: nowrap;
+    }
+    nav ul{
+      padding:2em;
+    }
+    .rrssCabecera{
+      flex-wrap: nowrap;
+    }
+  }

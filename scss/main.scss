@@ -3,23 +3,49 @@
 @import "_content";
 @import "_vars";
 @import "_nav";
-@import "_animations"
-// *{
-//     background-color: $backgroundColor1;
-// 	font-family: $mainFont;
-// }
-$primaryColor: red;
+@import "_animations";
+*{
+    background-color: $backgroundColor1;
+	font-style: $mainFont, $textRegular;
+}
 
-body{
-    background-color: $primaryColor;
+body {
+    background-color: $mainColor;
     width: 100%;
     overflow: auto;
 }
 
+h1,h2,h3,p {
+    color: $mainColor;
+}
+h1{
+    font-size: $textXl;
+    text-align: center;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
 
+
+@media only screen and (max-width: 600px) {
+    .carousel-inner{
+      /* height: 20%; */
+      object-fit:cover;
+      align-items: center;
+      justify-content: center;
+    }
+    .imgcar{
+        width:max-content
+    } 
+} 
+
+footer{
+    font-style: italic;
+}
 
 // 1. revisar si compila -- OK
-// 2. empezar a pasar css a los scss
+// 2. empezar a pasar css a los scss -- OK
 // 3. no olvidar hacer los mixins, extends
 // 4. no olvidar ALTS, metas, robots.txt
 // 5. arreglar imgs
