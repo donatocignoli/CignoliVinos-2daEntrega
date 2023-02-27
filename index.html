@@ -8,16 +8,23 @@
     <meta name="description" content="Fabricamos y embotellamos emociones. Somos winemakers. Creadores de Vinizio">
     <meta name="keywords" content="vino argentino, fabricantes, dispenser de vino, wine dispenser, boutique wine, vino boutique">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
 </head>
 <body>
     <!-- Nav -->
-    <nav class="navbar navbar-expand-lg navbar-expand-md col-lg-12 col-md-12 col-sm-fluid navbar-light bg-light" id="cabecera">
-      <div class="container-fluid">
-        <a class="navbar-brand order-lg-first order-md-first order-sm-2 order-xs-2" href="#"><img id="logo" class="  col-lg-8 col-md-8 col-sm-3 ms-lg-5 ms-md-3 ms-sm-1" src="img/Logo/LogoCompletoNegro.png" alt="Logo Cignoli Vinos"></a>
-        <button class="navbar-toggler order-sm-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid mx-1 flex-nowrap ">
+        <!-- marca -->
+        <div class="container-fluid order-lg-first order-md-first order-2 ps-5">
+          <a class="navbar-brand" href="#"><img id="logo" src="img/Logo/LogoCompletoNegro.png" alt="Logo Cignoli Vinos"></a>
+        </div>
+        <!-- botón -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- enlaces -->
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -37,7 +44,9 @@
             </li>
           </ul>
         </div>
-          <ul class="navbar-nav rrssCabecera order-sm-3 container-fluid" >
+        <!-- redes -->
+        <div class="container-fluid order-last mx-0" id="rrssCabecera">
+          <ul class="navbar-nav order-sm-3 flex-row" >
             <li class="nav-item">
               <a class="nav-link" href=""><img class="nav-item rrssIco" src="img/RRSS/IG.png" alt="Logo instagram"></a>
             </li>
@@ -49,25 +58,43 @@
             </li>
           </ul>
         </div>
+        </div>
     </nav>
     <!-- Fin de la Nav -->
     <main id="mainGrid">
-        <!-- Secciones -->
+        <!-- Secciones -->  
         <div class="container-fluid-p-0 secciones">
             <!-- Sección 1 Carrusel -->
-            <div id="carouselPrincipal" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="img/hero_presentacion.jpg" class="imgcar d-block lg-w-100 sm-w-50" alt="Presentación nuevo vino">
+            <section class="home">
+              <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+              <div class="carousel-controls">
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel" data-slide-to="0" class="active" style="background-image:url('img/hero_presentacion.jpg')"></li>
+                  <li data-target="#carousel" data-slide-to="1" style="background-image:url('img/hero_presentacion_2.jpg')"></li>
+                </ol>
+                <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                 <img src="img/left-arrow.svg" alt="Prev"> 
+              </a>
+              <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                <img src="img/right-arrow.svg" alt="Next">
+              </a>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active" style="background-image:url('img/hero_presentacion.jpg')">
+                  <div class="container">
+                     <h2>PRIMER VUELO</h2>
+                     <p>El comienzo de nuestra gama</p>
                   </div>
-                  <div class="carousel-item">
-                    <img src="img/hero_terrori.jpg" class="imgcar d-block lg-w-100 sm-w-auto" alt="Acerca del terroir">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="img/hero_Vinizio.png" class="imgcar d-block lg-w-100 sm-w-auto" alt="Vinizio, dispenser de vino">
+                </div>
+                <div class="carousel-item" style="background-image:url('img/hero_presentacion_2.jpg')">
+                  <div class="container">
+                     <h2>RESERVÁ</h2>
+                     <p>No te pierdas los importados de este 2023</p>
                   </div>
                 </div>
               </div>
+            </div>
+             </section>
             <!-- Sección 2 Presentación de la web -->
             <div class="container-fluid area2">
                 <div class="row">
@@ -129,7 +156,7 @@
                 </div>
               </div>
             <!-- Sección 5 -->
-            <div class="container-fluid area5 backgroundCream">
+            <div class="container-fluid area5">
                 <div class="row">
                 <section name="presentacion">
                     <div class="col-lg-8 col-sm-10 mx-auto">
@@ -153,13 +180,15 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="row ">
-        <div class="col-lg-12 col-sm-12 mx-auto text-center text-wrap backgroundCream">
-        <p>Copyright</p><a href="https://www.instagram.com/donatocignoli/">Donato Cignoli</a><p>para CODERHOUSE</p>
+    <footer class="text-center text-lg-start">
+      <div class="container p-4">
+        <div class="text-center">
+          <p class="text-muted mb-0">Copyright - Donato Cignoli para CODERHOUSE</p>
         </div>
-        </div>
+      </div>
     </footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

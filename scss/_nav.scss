@@ -1,55 +1,55 @@
-#cabecera{
+.navbar{
     background-color: $backgroundColor2;
-    flex:row;
-    align-items: flex-start;
-    justify-content: space-between;
-    .navbar-brand{
-        #logo{
-            width: 50%;
-            object-fit:cover;
-            padding: 0% 5%;
-            @media(min-width: 768px){
-                width:30%;
-                // cambio de tamaño de logo según el viewport
-            }
-            @media(min-width: 576){
-                width:25%;
-        }
-    }
+    display: flex;
+    justify-content: space-around;
 }
-#cabecera{
-    ul{
-        li{
-            text-transform: uppercase;
-            display: inline-block;
-            justify-content: space-around;
-            #logoVinizio{
-                width: 7vw;
-                object-fit: cover;
-            .rrssIco{
-                width: 1vw;
-                object-fit: cover;
-                }
-                }
-            }
-        }
 
-    .rrssCabecera{
-        @media(min-width: none){
-            width:25%;
+#logo{
+    width: 30vw;
+    @media(min-width: 992px){
+        width:20vw;
+    }
+
+}
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#navbarNav{
+    #logoVinizio{
+        width: 3em;
+    }
+    .nav-item{
+        font-size: $textSm;
+        @media(min-width:992px){
+            font-size: $textXs;
+        }
+        @media(min-width:1200px){
+            font-size: $textSm
         }
     }
 }
+
+#rrssCabecera{
+    display: flex;
+    justify-content: end;
+    .rrssIco{
+        display: flex;
+        width: 7vw;
+        padding-left: 10%;
+        padding-right: 10%;
+        @media(min-width: 992px){
+            width:5vw;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        @media(min-width:1200px){
+            width:4vw;
+        }
+        @media(min-width:1400px){
+            width:3vw;
+        }
+    }
+
 }
-@media (max-width: 992px) {
-    .navbar{
-      display:inline-flex;
-      flex-wrap: nowrap;
-    }
-    nav ul{
-      padding:2em;
-    }
-    .rrssCabecera{
-      flex-wrap: nowrap;
-    }
-  }

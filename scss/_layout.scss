@@ -2,8 +2,21 @@
     justify-content: center;
     align-content: center;
 }
+.carouselPrincipal{
+    height: 40vh;
+}
+.area2, .area3{
+    img{
+        max-width: 100vw;
+        object-fit: cover;
+    }
+}
 .area2{
+    box-sizing: inherit;
     padding: 5%;
+    h1{
+        padding: 5%;
+    }
 }
 .area3{
     height: 30%;
@@ -20,8 +33,36 @@
     padding: 20% 15% 0% 10%;
 }
 .area5{
+    background-color: $backgroundColor2;
     padding: 5%;
 }
 .area6{
     padding: 5%;
+}
+.area7{
+    margin-bottom: 5%;
+}
+.area8{
+    background-color: $backgroundColor2;
+    padding: 5%;
+    margin-bottom: 5%;
+}
+.img-fluid{
+    height: 100%;
+    object-fit: cover;
+}
+.areaCards{
+    align-items: center;
+    justify-content: center;
+}
+.formArea{
+    height: 60vh;
+}
+.formBg{
+    background-color: $backgroundColor1;
+}
+.btn{
+    background-color: $buttonColor;
+    border-color: $mainColor;
+        
 }

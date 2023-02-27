@@ -4,7 +4,20 @@
   align-content: center;
 }
 
+.carouselPrincipal {
+  height: 40vh;
+}
+
+.area2 img, .area3 img {
+  max-width: 100vw;
+  object-fit: cover;
+}
+
 .area2 {
+  box-sizing: inherit;
+  padding: 5%;
+}
+.area2 h1 {
   padding: 5%;
 }
 
@@ -24,6 +37,7 @@
 }
 
 .area5 {
+  background-color: #F0ECE6;
   padding: 5%;
 }
 
@@ -31,68 +45,120 @@
   padding: 5%;
 }
 
-#cabecera {
+.area7 {
+  margin-bottom: 5%;
+}
+
+.area8 {
   background-color: #F0ECE6;
-  flex: row;
-  align-items: flex-start;
-  justify-content: space-between;
+  padding: 5%;
+  margin-bottom: 5%;
 }
-#cabecera .navbar-brand #logo {
-  width: 50%;
+
+.img-fluid {
+  height: 100%;
   object-fit: cover;
-  padding: 0% 5%;
 }
-@media (min-width: 768px) {
-  #cabecera .navbar-brand #logo {
-    width: 30%;
-  }
+
+.areaCards {
+  align-items: center;
+  justify-content: center;
 }
-@media (min-width: 576) {
-  #cabecera .navbar-brand #logo {
-    width: 25%;
-  }
+
+.formArea {
+  height: 60vh;
 }
-#cabecera #cabecera ul li {
-  text-transform: uppercase;
-  display: inline-block;
+
+.formBg {
+  background-color: white;
+}
+
+.btn {
+  background-color: #bdc8d5;
+  border-color: #333333;
+}
+
+.navbar {
+  background-color: #F0ECE6;
+  display: flex;
   justify-content: space-around;
 }
-#cabecera #cabecera ul li #logoVinizio {
-  width: 7vw;
-  object-fit: cover;
+
+#logo {
+  width: 30vw;
 }
-#cabecera #cabecera ul li #logoVinizio .rrssIco {
-  width: 1vw;
-  object-fit: cover;
-}
-@media (min-width: none) {
-  #cabecera #cabecera .rrssCabecera {
-    width: 25%;
+@media (min-width: 992px) {
+  #logo {
+    width: 20vw;
   }
 }
 
-@media (max-width: 992px) {
-  .navbar {
-    display: inline-flex;
-    flex-wrap: nowrap;
-  }
-  nav ul {
-    padding: 2em;
-  }
-  .rrssCabecera {
-    flex-wrap: nowrap;
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbarNav #logoVinizio {
+  width: 3em;
+}
+#navbarNav .nav-item {
+  font-size: 1.5rem;
+}
+@media (min-width: 992px) {
+  #navbarNav .nav-item {
+    font-size: 1rem;
   }
 }
+@media (min-width: 1200px) {
+  #navbarNav .nav-item {
+    font-size: 1.5rem;
+  }
+}
+
+#rrssCabecera {
+  display: flex;
+  justify-content: end;
+}
+#rrssCabecera .rrssIco {
+  display: flex;
+  width: 7vw;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media (min-width: 992px) {
+  #rrssCabecera .rrssIco {
+    width: 5vw;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+@media (min-width: 1200px) {
+  #rrssCabecera .rrssIco {
+    width: 4vw;
+  }
+}
+@media (min-width: 1400px) {
+  #rrssCabecera .rrssIco {
+    width: 3vw;
+  }
+}
+
+.banner {
+  height: 40vh;
+  margin-bottom: 25%;
+}
+
 h1 {
   max-width: 80vw;
   text-align: center;
-  transform: scale(3);
+  transform: scale(1);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 @keyframes scale {
   100% {
-    transform: scale(1.9);
+    transform: scale(1.3);
   }
 }
 span {
@@ -179,15 +245,22 @@ span:nth-child(18) {
     filter: blur(0);
   }
 }
-* {
-  background-color: white;
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-style: "Josefin-Sans", sans-serif, 200;
 }
 
 body {
-  background-color: #333333;
-  width: 100%;
+  margin: 0;
+  background-color: inherit;
+  max-width: 100vw;
   overflow: auto;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1, h2, h3, p {
@@ -195,27 +268,27 @@ h1, h2, h3, p {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   text-align: center;
 }
 
-img {
-  width: 100%;
-  object-fit: cover;
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-bottom: 10vh;
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2rem;
+  }
 }
 
-@media only screen and (max-width: 600px) {
-  .carousel-inner {
-    /* height: 20%; */
-    object-fit: cover;
-    align-items: center;
-    justify-content: center;
-  }
-  .imgcar {
-    width: max-content;
-  }
+.text-block {
+  padding: 50px;
 }
+
 footer {
+  background-color: #F0ECE6;
   font-style: italic;
 }
 

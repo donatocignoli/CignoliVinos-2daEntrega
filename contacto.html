@@ -11,63 +11,93 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<!-- Nav -->
-<nav class="navbar navbar-expand-lg navbar-expand-md col-lg-12 col-md-12 col-sm-fluid navbar-light bg-light" id="cabecera">
-  <div class="container-fluid">
-    <a class="navbar-brand order-lg-first order-md-first order-sm-2 order-xs-2" href="#"><img id="logo" class="  col-lg-8 col-md-8 col-sm-3 ms-lg-5 ms-md-3 ms-sm-1" src="img/Logo/LogoCompletoNegro.png" alt="Logo Cignoli Vinos"></a>
-    <button class="navbar-toggler order-sm-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="index.html">Principal</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="vinos.html">Vinos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="terroir.html">Terroir</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="vinizio.html"><img alt="Vinizio" id="logoVinizio" src="img/LogoVinizio.png"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contacto.html">Contacto</a>
-        </li>
-      </ul>
-    </div>
-      <ul class="navbar-nav rrssCabecera order-sm-3 container-fluid" >
-        <li class="nav-item">
-          <a class="nav-link" href=""><img class="nav-item rrssIco" src="img/RRSS/IG.png" alt="Logo instagram"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=""><img class="nav-item rrssIco" src="img/RRSS/TW.png" alt="Logo Twitter"></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=""><img class="nav-item rrssIco" src="img/RRSS/BeReal.png" alt="Logo BeReal"></a>
-        </li>
-      </ul>
-    </div>
-</nav>
-<!-- Fin de la Nav -->
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-md">
+      <div class="container-fluid mx-1 flex-nowrap ">
+        <!-- marca -->
+        <div class="container-fluid order-lg-first order-md-first order-2 ps-5">
+          <a class="navbar-brand" href="#"><img id="logo" src="img/Logo/LogoCompletoNegro.png" alt="Logo Cignoli Vinos"></a>
+        </div>
+        <!-- botón -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- enlaces -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Principal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vinos.html">Vinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="terroir.html">Terroir</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="vinizio.html"><img alt="Vinizio" id="logoVinizio" src="img/LogoVinizio.png"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <!-- redes -->
+        <div class="container-fluid order-last mx-0" id="rrssCabecera">
+          <ul class="navbar-nav order-sm-3 flex-row" >
+            <li class="nav-item">
+              <a class="nav-link" href=""><img class="nav-item rrssIco" src="img/RRSS/IG.png" alt="Logo instagram"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><img class="nav-item rrssIco" src="img/RRSS/TW.png" alt="Logo Twitter"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""><img class="nav-item rrssIco" src="img/RRSS/BeReal.png" alt="Logo BeReal"></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+    </nav>
+      <!-- Fin de la Nav -->
     <main>
-        <!-- Secciones -->
-        <section name="contacto" backgroundCream>
-            <h2>Ponete en contacto con nosotros</h2>
-            <div class="contactForm" backgroundWhite>
-                <form action="envio.php"> 
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name"> 
-                    <label for="email">Correo electrónico</label>
-                    <input type="text" id="email">
-                    <label for="message">Mensaje</label>
-                    <input type="text" id="message">                     
-                </form>
+     <div class="container-lg my-5 formArea">
+      <h2>Ponte en contacto con nosotros</h2>
+        <form>
+          <div class="row formBg">
+            <div class="col-md-6 col-sm-12">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                <label for="nombre">Nombre</label>
+              </div>
             </div>
-        </section>
+            <div class="col-md-6 col-sm-12">
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="correo" placeholder="Correo electrónico">
+                <label for="correo">Correo electrónico</label>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-floating mb-3">
+                <textarea class="form-control" id="mensaje" placeholder="Mensaje" style="height: 150px"></textarea>
+                <label for="mensaje">Mensaje</label>
+              </div>
+            </div>
+            <div class="col-2 d-grid mx-auto">
+              <button type="submit" class="btn btn-primary" >Enviar</button>
+            </div>
+          </div>
+        </form>
+      </div>
 
     </main>
-    <footer ><p>Copyright</p><a href="https://www.instagram.com/donatocignoli/">Donato Cignoli</a><p>para CODERHOUSE</p></footer>
-</body>
+    <footer class="text-center text-lg-start">
+      <div class="container p-4">
+        <div class="text-center">
+          <p class="text-muted mb-0">Copyright - Donato Cignoli para CODERHOUSE</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
 </html>
